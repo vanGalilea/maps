@@ -240,6 +240,7 @@ Pod::Spec.new do |s|
         s.dependency 'MapboxMaps', $MapboxImplVersion
         s.dependency 'Turf'
         s.swift_version = '5.0'
+        s.resource_bundles = { 'rnmapbox-maps' => [ 'ios/PrivacyInfo.xcprivacy' ] }
       else
         fail "$RNMapboxMapsImpl should be mapbox but was: $RNMapboxMapsImpl"
       end
